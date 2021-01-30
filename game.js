@@ -106,7 +106,7 @@ function checkWin() {
         card.classList.contains("show") === true ? goodAnswer.push("1") : goodAnswer;
         if (goodAnswer.length == cardsContent.length) {
             alert.style.display = "inherit";
-            alert.querySelector("img").src = "IMAGES/adrian-win.bmp";
+            alert.querySelector("img").src = "IMAGES/winner.jpg";
             alert.querySelector("p").innerText = "CONGRATULATIONS!";
             $('.demo').fireworks({ sound: true, opacity: 0.9, width: '100%', height: '100%' });
             setTimeout(function () {
