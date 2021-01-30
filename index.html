@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Javascript Game</title>
+    <meta charset="UTF-8">
+    <!-- http://proger.i-forge.net/The_smallest_transparent_pixel/ -->
+    <script src="https://kit.fontawesome.com/f904352e86.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="gamestyle.css">
+    <script src="game.js" defer></script>
+    <script src="wheel.js" defer></script>
+    <!-- <link href="gamestyle.css" rel="stylesheet" type="text/css" /> -->
+</head>
+
+<body>
+    <div class="log-container">
+        <div class="log-box">
+            <form>
+                <div class="user-1">User:
+                    <img src="IMAGES/man1.jpg" id="man1">
+                    <img src="IMAGES/manface.png" id="man2">
+                    <img src="IMAGES/woman1.jpg" id="woman1">
+                    <img src="IMAGES/womanface.png" id="woman2">
+                    <input type="text" placeholder="Game nick" id="name" name="name1">
+                </div>
+                <button id="log-btn">PLAY</button>
+            </form>
+        </div>
+    </div>
+
+    <main>
+        <div class="category"></div>
+        <div class="false-letter">
+            <span class="chance" id="first-chance">1</span>
+            <span class="chance" id="second-chance">2</span>
+            <span class="chance" id="third-chance">3</span>
+        </div>
+        <div class="cards">
+            <template id="card-template">
+                <div class="card">
+                    <img class="back" src="IMAGES/wheel.jpg">
+                    <div class="letter"></div>
+                </div>
+            </template>
+        </div>
+        <div id="textValue">Your score <p id="max_score">0</p></div>
+        </div>
+    </main>
+    <div class="gamer">
+        <div id="nick">Your name <p id="first_nick"></p></div>
+        <div id="img_gamer"><img id="first_img" class="avatar" src="IMAGES/actor.png"> </div>
+        <div id="first_score" class="score">0</div>
+    </div>
+    <div class="wheel-button-wrapper">
+        <div id="wheel_button"></div>
+    </div>
+
+
+    <div id="wheel-wrapper">
+        <div id="wheel">
+            <div id="inner-wheel">
+                <div class="part">
+                    <span>100</span>
+                </div>
+                <div class="part">
+                    <span>300</span>
+                </div>
+                <div class="part">
+                    <span>500</span>
+                </div>
+                <div class="part">
+                    <span>400</span>
+                </div>
+                <div class="part">
+                    <span>0</span>
+                </div>
+                <div class="part">
+                    <span>50</span>
+                </div>
+            </div>
+
+            <div id="spin">
+                <div id="inner-spin"></div>
+            </div>
+
+            <div id="shine"></div>
+        </div>
+        <div id="txt"></div>
+            <button id="back">Back to Game</button>
+    </div>
+
+    <div class="alert">
+        <div>
+            <p>YOU LOST!</p>
+            <img src="IMAGES/adrian-loser.bmp">
+            <div class="buttons">
+                <button id="new-game">NEW GAME</button>
+                <button id="exit">EXIT</button>
+            </div>
+        </div>
+    </div>
+    <div class="demo">
+    </div>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="jquery.fireworks.js"></script>
+</body>
+
+</html>
